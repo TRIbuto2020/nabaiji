@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NABAIJI</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,700&display=swap">
+    <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <img class="nav__logo" src="./images/logo.svg" alt="Logo Nabaiji Decathlon">
+            <ul class="nav__list">
+                <li><a  class="nav__list__item" href="#sobre">Sobre</a></li>
+                <li><a  class="nav__list__item" href="#produtos">Produtos</a></li>
+                <li><a  class="nav__list__item" target="_blank" href="https://www.decathlon.com.br/pesquisa?q=nabaiji&sort=score_desc&page=0">Loja</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="hero">
+        <div class="container">
+            <p class="hero__text">NABAIJI</p>
+        </div>
+    </header>
+    <main>
+        <div class="sobre" id="sobre">
+            <div class="container">
+                <div class="sobre__text">
+                    <h2 class="title">Sobre nós</h2>
+                    <p>Nascida em 2008, a Nabaiji é a marca internacional de natação do grupo DECATHLON. É também uma equipe de nadadores apaixonados que trabalham todos os dias para garantir a sua segurança e o seu conforto. Dentro do seu centro de inovação internacional situado em Hendaye, no País Basco, todos os dias surgem produtos inovadores e novas ideias. Nosso objetivo é ajudá-lo a alcançar não apenas seus objetivos esportivos, mas também aumentar seu desempenho. Seja você um nadador ocasional, regular ou intensivo, adulto ou criança, apreciador de hidroginástica ou pólo aquático, a Nabaiji pensou em cada um de vocês para aumentar o prazer de nadar.
+                    <br>Então, em suas marcas, vai!</p>
+                </div>
+                <img src="./images/perfilPiscina.avif" alt="Homem nadando submerso">
+            </div>
+        </div>
+        <hr>
+        <div class="produtos" id="produtos">
+            <div class="container">
+                <h2 class="title">Produtos</h2>
+                <div class="produtos__grid">
+                    <div class="produtos__card">
+                        <h3 class="produtos__card__title">Óculos de natação</h3>
+                        <div class='produtos__card__img'></div>
+                        <a target="_blank" href="https://www.decathlon.com.br/natacao/acessorios/oculos-de-natacao/?category-1=natacao&category-2=acessorios&category-3=oculos-de-natacao&brand=nabaiji&facets=category-1%2Ccategory-2%2Ccategory-3%2Cbrand&sort=score_desc&page=0" class="produtos__card__btn">Veja Mais</a>
+                    </div>
+                    <div class="produtos__card">
+                        <h3 class="produtos__card__title">Sungas</h3>
+                        <div class='produtos__card__img' style="background-image: url('./images/sunga.webp');"></div>
+                        <a target="_blank" href="https://www.decathlon.com.br/natacao/roupas/sungas/?category-1=natacao&category-2=roupas&category-3=sungas&brand=nabaiji&facets=category-1%2Ccategory-2%2Ccategory-3%2Cbrand&sort=score_desc&page=0" class="produtos__card__btn">Veja Mais</a>
+                    </div>
+                    <div class="produtos__card">
+                        <h3 class="produtos__card__title">Maiôs</h3>
+                        <div class='produtos__card__img' style="background-image: url('./images/maio.webp');"></div>
+                        <a target="_blank" href="https://www.decathlon.com.br/caiaque/roupas/maios/?category-1=caiaque&category-2=roupas&category-3=maios&brand=nabaiji&facets=category-1%2Ccategory-2%2Ccategory-3%2Cbrand&sort=score_desc&page=0" class="produtos__card__btn">Veja Mais</a>
+                    </div>
+                    <div class="produtos__card">
+                        <h3 class="produtos__card__title">Toucas</h3>
+                        <div class='produtos__card__img' style="background-image: url('./images/touca.webp'); background-position: right;"></div>
+                        <a target="_blank" href="https://www.decathlon.com.br/natacao/acessorios/toucas/?category-1=natacao&category-2=acessorios&category-3=toucas&brand=nabaiji&facets=category-1%2Ccategory-2%2Ccategory-3%2Cbrand&sort=score_desc&page=0" class="produtos__card__btn">Veja Mais</a>
+                    </div>
+                    <div class="produtos__card">
+                        <h3 class="produtos__card__title">Toalhas</h3>
+                        <div class='produtos__card__img' style="background-image: url('./images/toalha.webp');  background-position: right;"></div>
+                        <a target="_blank" href="https://www.decathlon.com.br/natacao/acessorios/toalhas-e-ponchos/?category-1=natacao&category-2=acessorios&category-3=toalhas-e-ponchos&brand=nabaiji&facets=category-1%2Ccategory-2%2Ccategory-3%2Cbrand&sort=score_desc&page=0" class="produtos__card__btn">Veja Mais</a>
+                    </div>
+                    <div class="produtos__card">
+                        <h3 class="produtos__card__title">Equipamento de treino</h3>
+                        <div class='produtos__card__img' style="background-image: url('./images/equipamento.webp');"></div>
+                        <a target="_blank" href="https://www.decathlon.com.br/natacao/equipamentos/?category-1=natacao&category-2=equipamentos&brand=nabaiji&facets=category-1%2Ccategory-2%2Cbrand&sort=score_desc&page=0" class="produtos__card__btn">Veja Mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </main>
+    <footer class="footer">
+        <h5 class="footer__text">
+            &copy; DECATHLON - 2023
+        </h5>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

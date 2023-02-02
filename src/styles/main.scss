@@ -1,0 +1,73 @@
+@use 'hero';
+@use 'var';
+@use 'nav';
+@use 'sobre';
+@use 'produtos';
+@use 'footer';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    color: #000;
+    list-style: none;
+    text-decoration: none;
+}
+
+main{
+    background-color: var.$background;
+}
+
+.container, hr{
+    max-width: calc(100% - 320px);
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: 1800px){
+        max-width: calc(100% - 160px);
+    }
+    @media (max-width: 1200px){
+        max-width: calc(100% - 80px);
+    }
+    @media (max-width: 900px){
+        max-width: calc(100% - 48px);
+    }
+    @media (max-width: 600px){
+        max-width: calc(100% - 40px);
+    }
+}
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.title{
+    font-family: roboto condensed, sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+hr{
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.274);
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+
+    &-track{
+        background: var.$background;
+    }
+
+    &-thumb{
+        background: var.$secondaryTextColor;
+
+        &:hover{
+            background: var.$darkblue;
+        }
+    }
+}

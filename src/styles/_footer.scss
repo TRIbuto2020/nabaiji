@@ -1,0 +1,18 @@
+@use 'var';
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 0;
+    
+    &__text{
+        font-weight: 400;
+        color: rgb(185, 185, 185);
+        letter-spacing: 8px;
+        font-size: 2rem;
+        @media (max-width: 600px){
+            font-size: .8rem;
+        }
+    }
+}

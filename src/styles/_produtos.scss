@@ -1,0 +1,63 @@
+@use 'var';
+
+.produtos{
+
+    margin-bottom: 64px;
+    
+    h2{
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+    
+    &__grid{
+        display: flex;
+        gap: 32px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    &__card{
+        display: flex;
+        width: 480px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: var.$textColor;
+        padding: 16px;
+        border-radius: 16px;
+        box-shadow: 0 6px 6px var.$shadow;
+        
+        &__title{
+            text-align: center;
+            font-family: Roboto condensed;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        &__img{
+            width: 95%;
+            height: 280px;
+            background-image: url('../images/oculos.webp');
+            background-size: cover;
+            margin-bottom: 16px;
+        }
+
+        &__btn{
+            border: 2px solid #000;
+            border-radius: 8px;
+            padding: 8px;
+            margin: auto;
+            font-family: Roboto condensed;
+            font-weight: 700;
+            text-transform: uppercase;
+            transition: all .2s linear;
+
+            &:hover{
+                border-color: var.$darkblue;
+                color: var.$darkblue;
+                transition: all .2s linear;
+            }
+        }
+    }
+}

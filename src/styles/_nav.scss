@@ -1,0 +1,58 @@
+@use 'var';
+
+.nav{
+    position: sticky;
+    top: 0;
+    background-color:  var.$textColor;
+    z-index: 10;
+    box-shadow: 0 6px 6px var.$shadow;
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media (max-width: 600px){
+            flex-direction: column;
+        }
+    }
+
+    &__logo{
+        height: 24px;
+        padding: 8px;
+    }
+    
+    &__list{
+        display: flex;
+        width: 50%;
+        gap: 16px;
+        justify-content: right;
+        @media (max-width: 600px){
+            width: 100%;
+            justify-content: space-evenly;
+        }
+
+        li{
+            padding: 16px 0 13px;
+            border-bottom: 3px solid transparent;
+            transition: all .2s linear;
+            
+            &:hover{
+                border-bottom: 3px solid var.$darkblue;
+                transition: all .2s linear;
+                
+                a{
+                    transition: all .2s linear;
+                    color: var.$darkblue;
+                }
+            }
+        }
+        
+        &__item{
+            color: #000;
+            font-family: Roboto condensed;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+    }
+}

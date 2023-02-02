@@ -1,0 +1,48 @@
+@use 'var';
+
+.hero{
+    padding-top: 64px;
+    padding-bottom: 100px;
+    background-image: url(../images/fundo.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 65vh;
+    display: flex;
+    align-items: center;
+
+    .container{
+        position: relative;
+    }
+
+    &::before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(5px) saturate(150%) brightness(90%);
+        content: "";
+    }
+
+    &__text{
+        font-size: 6rem;
+        line-height: 56px;
+        font-weight: 700;
+        text-align: center;
+        letter-spacing: 10px;
+        z-index: 2;
+        color: var.$textColor;
+    }
+
+    @media (max-width:640px){
+        padding: 40px 0;
+
+        &__text{
+            font-size: 22px;
+            line-height: 24px;
+            margin: 24px 0;
+        }
+    }
+}
